@@ -1,0 +1,117 @@
+
+<!-- saved from url=(0059)file:///C:/Users/jerry98998/Desktop/MSM-face-alignment.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>MSM-face-alignment</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./index_files/index.css">
+	<link rel="stylesheet" media="screen and (min-width:600px)" href="./index_files/over600.css">
+	
+	<link rel="stylesheet" type="text/css" href="./index_files/slick.css">
+	<link rel="stylesheet" type="text/css" href="./index_files/slick-theme.css">
+</head>
+<body>
+	<div class="header">
+		<h1>Multistage Model for Robust Face Alignment Using Deep Neural Networks</h1>
+	</div>
+	<div class="info">				
+		<i>
+		<p style="text-align: center;">Huabin Wang<sup>1</sup>,  Rui Cheng<sup>1</sup>,  Jian Zhou<sup>1</sup>,  Liang Tao<sup>1</sup>, Hon Keung Kwan<sup>2</sup></p>
+		<p style="text-align: center;"><sup>1</sup>Anhui Provincial Key Laboratory of Multimodal Cognitive Computation, School of Computer Science and Technology, Anhui University, Hefei, China</p>
+		<p style="text-align: center;"><sup>2</sup>Department of Electrical and Computer Engineering, University of Windsor, Windsor, ON N9B 3P4, Canada</p>
+		</i>
+
+	</div>
+    <h2 style="font-size:16;">
+        <b>Summary</b>
+    </h2>
+        <p style="text-align: justify;">An ability to generalize unconstrained conditions such as severe occlusions and large pose variations remains a challenging goal to achieve in face alignment. In this demo, a multistage model based on deep neural networks is presented which takes advantages of spatial transformer networks, hourglass networks and exemplar-based shape constraints. First, a spatial transformer - generative adversarial network which consists of convolutional layers and residual units is utilized to solve the initialization issues caused by face detectors, such as rotation and scale variations, to obtain improved face bounding boxes for face alignment. Then, stacked hourglass network is employed to obtain preliminary locations of landmarks as well as their corresponding scores. In addition, an exemplar-based shape dictionary is designed to determine landmarks with low scores based on those with high scores. By incorporating face shape constraints, misaligned landmarks caused by occlusions or cluttered backgrounds can be considerably improved. Extensive experiments based on challenging benchmark datasets are performed to demonstrate the superior performance of the proposed method over other state-of-the-art methods.</p>
+
+
+    <h2 style="font-size:16;">
+        <b>Highlights</b>
+    </h2>
+  
+         1) A spatial transformer - generative adversarial network is proposed to produce promising initial face images for face alignment. 
+        <br> 
+         2) Based on the intensity of the heatmaps obtained by a two stage hourglass network, a scoring scheme is designed to measure the quality of predicted landmarks locations, which can estimate the occlusion level of each landmark and distinguish the aligned landmarks from misaligned landmarks.
+        <br> 
+        3) An exemplar-based shape dictionary is employed to impose geometric constraints. The landmarks with high scores are used to search similar shapes from dictionary, and the landmarks with low scores are reﬁned by shape reconstruction using similar shapes. 
+        <br> 
+         4) Experiment results on several benchmark datasets (300-W, COFW and WFLW) show that our proposed multistage model outperforms most recent face alignment methods, especially for faces with difficult scenarios such as large pose, lighting and occlusion, etc.
+     
+    <p></p>
+
+<div class="utterance">
+
+		<h3 style="font-size:16;"> Overview of the proposed multistage model (MSM)</h3>
+                <a href="./index_files/FIG1.JPG" class="thumbnum" rel="tooltip" data-placement="top" title="Click for large image">
+                    <img src="./index_files/FIG1.JPG" alt="" width="1200" height="435">
+                </a>
+	</div>
+  <p style="text-align: justify;"><b>Posting date: </b>4 February 2020. <br> 
+<b>Cite as: </b>Huabin Wang, Rui Cheng, Jian Zhou, Liang Tao, and Hon Keung Kwan, "Multistage model for robust face alignment using deep neural networks," arXiv preprint arXiv:2002.01075. 
+</p>
+
+
+    <h2 style="font-size:16;">
+        <b>Results</b>
+    </h2>
+<div id="form">
+	<div class="audio_container">
+
+	
+	<div class="utterance">
+				<h3 style="font-size:16;">300-W dataset</h3>
+                <a href="./index_files/300W.gif" class="thumbnum" rel="tooltip" data-placement="top" title="Click for large image">
+                    <img src="./index_files/300W.gif" alt="" width="1200" height="500">
+                </a>
+	</div>
+
+	<div class="utterance">
+				<h3 style="font-size:16;">COFW dataset</h3>
+                <a href="./index_files/cofw.gif" class="thumbnum" rel="tooltip" data-placement="top" title="Click for large image">
+                    <img src="./index_files/cofw.gif" alt="" width="1200" height="500">
+                </a>
+	</div>
+
+     <div class="utterance">
+         <h3 style="font-size:16;">WFLW dataset</h3>
+                <a href="./index_files/wflw.gif" class="thumbnum" rel="tooltip" data-placement="top" title="Click for large image">
+                    <img src="./index_files/wflw.gif" alt="" width="1200" height="500">
+                </a>
+	</div>
+
+	<div class="utterance">
+				<h3 style="font-size:16;">Collected from members of this laboratory</h3>
+                <a href="./index_files/lab.gif" class="thumbnum" rel="tooltip" data-placement="top" title="Click for large image">
+                    <img src="./index_files/lab.gif" alt="" width="1200" height="500">
+                </a>
+	
+    </div>	
+
+
+
+
+
+   
+</div>
+  
+
+
+	<script type="text/javascript" src="./index_files/jquery-1.11.0.min.js.下载"></script>
+	<script type="text/javascript" src="./index_files/jquery-migrate-1.2.1.min.js.下载"></script>
+	<script type="text/javascript" src="./index_files/slick.min.js.下载"></script>
+
+	<script type="text/javascript">
+	    var info = 'This is a subjective test used to evaluate our speech enhancement systems at TALP-UPC@Barcelona. Eight sentences will be prompted, and every sentence will contain 6 different spoken versions. Given each system, please rate (1) the level of Background Noise (BCK), and (2) the level of Speech Distortion (SPE) with the corresponding selectors.'
+	    var x = window.matchMedia("(max-width: 600px)")
+	    $(document).ready(function () {
+	       
+	    });
+	  
+
+	</script>
+
+
+
+</div></body></html>
